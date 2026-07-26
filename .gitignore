@@ -14,6 +14,7 @@ my-producer-key.pem
 *.pem
 terraform/.terraform/
 terraform/terraform.tfstate*
+terraform/terraform.tfvars
 terraform_backup/
 *.zip
 *.egg-info/
