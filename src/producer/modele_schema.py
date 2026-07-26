@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 @dataclass
 class User:
@@ -41,8 +41,8 @@ class Session:
     device: str
     browser: str
     cart: Cart
-    last_search: str | None = None
-    viewed_product: Product | None = None
+    last_search: Optional[str] = None
+    viewed_product: Optional[Product] = None
 
 @dataclass
 class Event:

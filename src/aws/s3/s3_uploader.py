@@ -40,7 +40,7 @@ class S3Uploader:
             f"year={now.year}/"
             f"month={now.month:02d}/"
             f"day={now.day:02d}/"
-            f"events_{now.strftime('%H%M%S')}.json"
+            f"events_{now.strftime('%H%M%S_%f')}.json"
         )
 
         self.s3.upload_fileobj(
