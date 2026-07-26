@@ -93,3 +93,5 @@ variable "glue_role_name" {
   type        = string
   default     = "clickstream-glue-role"
 }
+
+

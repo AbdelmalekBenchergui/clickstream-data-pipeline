@@ -28,7 +28,7 @@ resource "aws_iam_role_policy" "producer_s3_policy" {
           "s3:PutObject",
           "s3:GetObject"
         ]
-        Resource = "arn:aws:s3:::${aws_s3_bucket.raw.id}/clickstream-raw/*"
+        Resource = "arn:aws:s3:::${aws_s3_bucket.raw.id}/events/*"
       },
       {
         Effect = "Allow"

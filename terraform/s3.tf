@@ -138,3 +138,5 @@ output "s3_gold_path" {
   value       = "s3://${aws_s3_bucket.gold.id}/clickstream-gold/"
   description = "S3 path for gold data"
 }
+
+
